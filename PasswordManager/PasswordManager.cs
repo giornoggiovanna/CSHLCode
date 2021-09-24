@@ -1,67 +1,79 @@
-﻿using System;
-using System.Text;
+﻿// using System;
+// using System.Text;
 
-namespace PasswordManager
-{
-    class PasswordInputer
-    {
-
-        
-
-        static string userInput;
-
-        static void Main()
-        {
-
-            Console.WriteLine("Create a new password");
-            userInput = Console.ReadLine();
-
-            if(userInput.Equals("Quit"))
-            {
-
-                Console.WriteLine("Quiting...");
-
-                return;
-            }
-
-
-        }
-
+// namespace PasswordManager
+// {
+//     class PasswordInputer
+//     {
 
         
+
+//         static string userInput;
+
+//         static void Main()
+//         {
+
+//             Console.WriteLine("Create a new password");
+//             userInput = Console.ReadLine();
+
+//             if(userInput.Equals("Quit"))
+//             {
+
+//                 Console.WriteLine("Quiting...");
+
+//                 return;
+//             }
+
+
+//         }
+
+
+        
         
 
-    }
+//     }
 
-    class PasswordChecker
-    {
+//     class PasswordChecker
+//     {
 
-        char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',};
+//         char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',};
 
-        bool CheckPassword(string p)
-        {
+//         ref bool CheckPassword(string p)
+//         {
+    
+//             ref bool a;
 
-            int l = p.Length
+//             foreach(char c in numbers)
+//             {
+
+//                 a = CheckForNumber(c, p);
+
+//                 if(a) break;
+
+                
+//             }
             
-            for(int i = 0, i > l, i++)
-            {
+
+//             return ref a;
+
+//         }
+
+//         bool CheckForNumber(char c, string s)
+//         {
+
+//             if(s.Contains(c)) return true;
+//             else return false;
+
+//         }
+
+//     }
+
+//     class PasswordGenerator
+//     {
 
 
 
-            }
 
 
-        }
-
-
-    }
-
-    class PasswordGenerator
-    {
-
-
-
-
-
-    }
-}
+//     }
+// }

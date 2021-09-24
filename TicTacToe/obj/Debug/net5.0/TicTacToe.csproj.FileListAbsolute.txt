@@ -1,0 +1,16 @@
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe.deps.json
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe.runtimeconfig.json
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe.runtimeconfig.dev.json
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe.dll
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/ref/TicTacToe.dll
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/bin/Debug/net5.0/TicTacToe.pdb
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.csproj.AssemblyReference.cache
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.AssemblyInfoInputs.cache
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.AssemblyInfo.cs
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.csproj.CoreCompileInputs.cache
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.dll
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/ref/TicTacToe.dll
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.pdb
+/home/hayzam1022/CS_HL_Code/CSCode/TicTacToe/obj/Debug/net5.0/TicTacToe.genruntimeconfig.cache
