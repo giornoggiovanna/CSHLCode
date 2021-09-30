@@ -3,8 +3,8 @@
 namespace TicTacToe
 {
     class Program
-    {
-        
+    {   
+
         static string TTTBoard = 
         (
             @"
@@ -39,9 +39,12 @@ namespace TicTacToe
                 Console.WriteLine(TTTBoard);
                 Console.WriteLine("Place your X by typing the position using 1-9, going from left to right starting at the top left.");
 
+                while(!tttGL.gameEnd)
+                {
+
                 tttGL.getPlayerPosition();
-                tttGL.printBoard();
-                tttGL.printBoard();
+                
+                }
             }
 
         }
@@ -65,84 +68,99 @@ namespace TicTacToe
         //     "
         // );
 
+        int i;
+
         int [] positions = new int[9];
         
         string [] placements = new string[9];
 
         public bool userOneTurn;
+        public bool gameEnd;
 
         public void getPlayerPosition()
         {
 
             if (userOneTurn)
             {
+                Console.WriteLine("It is player one's turn");
 
                 var userOneInput = int.Parse(Console.ReadLine());
 
+                if(positions[userOneInput - 1] != 2)
+                {
+                    
                 positions[userOneInput - 1] = 1;
+                
+                }
+
             }
             else 
             {
+                Console.WriteLine("It is player two's turn");
+
                 var userTwoInput = int.Parse(Console.ReadLine());
 
-                positions[userTwoInput - 1] = 2;
+                if(positions[userTwoInput - 1] != 1)
+                {
 
+                positions[userTwoInput - 1] = 2;
+                
+                }
 
             }
+
+            updateBoard();
 
         }
 
         public void updateBoard()
-        {
+        {   
 
             int pl = positions.Length; 
 
-            for (int i = 0; i > pl; i++)
+            for (i = 0; i < pl; i++)
             {
 
+                
                 if(positions[i] == 1)
                 {
 
-                    placements[i] = ("X");
+                    placements[i] = (" X ");
+
 
                 }
-                if(positions[i] == 2)
+                else if(positions[i] == 2)
                 {
 
-                    placements[i] = ("Y");
+                    placements[i] = (" O ");
 
                 }
-                else placements[i] = ("_");
+                else if (positions[i] == 0) placements[i] = (" _ ");
+
+                Console.Write(placements[i]);
+
+                if(i != 2 || i !=5) Console.Write("|");
 
 
-            }
-
-        }
-
-        public void printBoard()
-        {
-
-            for(int i = 0; i == 9; i += 3)
-            {
-
-                Console.WriteLine($"{placements[i]}|{placements[i+1]}|{placements[i+2]}" );
-
-                if(i >= 6) break;
-                else
+                if(i == 2 ||  i == 5)
                 {
-                Console.Write(Environment.NewLine);
-                Console.WriteLine("-------------");
+                    Console.Write(System.Environment.NewLine);
+                    Console.WriteLine("-----------");
                 }
 
             }
 
+            Console.Write(System.Environment.NewLine);
+
+            userOneTurn = !userOneTurn;
+
         }
+
 
     }
 
     class AILogic
     {
-
 
 
     }

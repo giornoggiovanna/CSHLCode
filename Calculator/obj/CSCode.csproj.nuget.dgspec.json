@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hayzam1022/CS_HL_Code/CSCode/CSCode.csproj": {}
+    "/home/hayzam1022/CS_HL_Code/CSCode/Calculator/CSCode.csproj": {}
   },
   "projects": {
-    "/home/hayzam1022/CS_HL_Code/CSCode/CSCode.csproj": {
+    "/home/hayzam1022/CS_HL_Code/CSCode/Calculator/CSCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hayzam1022/CS_HL_Code/CSCode/CSCode.csproj",
+        "projectUniqueName": "/home/hayzam1022/CS_HL_Code/CSCode/Calculator/CSCode.csproj",
         "projectName": "CSCode",
-        "projectPath": "/home/hayzam1022/CS_HL_Code/CSCode/CSCode.csproj",
+        "projectPath": "/home/hayzam1022/CS_HL_Code/CSCode/Calculator/CSCode.csproj",
         "packagesPath": "/home/hayzam1022/.nuget/packages/",
-        "outputPath": "/home/hayzam1022/CS_HL_Code/CSCode/obj/",
+        "outputPath": "/home/hayzam1022/CS_HL_Code/CSCode/Calculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hayzam1022/.nuget/NuGet/NuGet.Config"
