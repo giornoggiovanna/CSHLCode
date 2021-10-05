@@ -2,8 +2,10 @@
 
 namespace TicTacToe
 {
-    class Program
+    class Board
     {   
+
+        //Private Variables
 
         static string TTTBoard = 
         (
@@ -17,6 +19,7 @@ namespace TicTacToe
             "
         );
 
+        //Main method
         static void Main(string[] args)
         {
             
@@ -45,6 +48,8 @@ namespace TicTacToe
                 tttGL.getPlayerPosition();
                 
                 }
+
+                if(tttGL.gameEnd) Console.WriteLine("The game has ended. No one won.");
             }
 
         }
@@ -54,29 +59,24 @@ namespace TicTacToe
     class GameLogic
     {
 
-        // string userOnePosition;
-        // string userTwoPosition;
-        // string newBoard =
-        // (
-        //     @"
-        //         |     | 
-        //      -------------
-        //         |     |  
-        //      -------------
-        //         |     | 
-                
-        //     "
-        // );
+        //Private Variables
 
         int i;
+
+        bool blankSpace = false;
+
+        //Private Arrays
 
         int [] positions = new int[9];
         
         string [] placements = new string[9];
 
+        //Public Variables
+
         public bool userOneTurn;
         public bool gameEnd;
 
+        //Getting the position that the player has chosen
         public void getPlayerPosition()
         {
 
@@ -113,6 +113,7 @@ namespace TicTacToe
 
         }
 
+        //Updating the board to show that position
         public void updateBoard()
         {   
 
@@ -135,8 +136,14 @@ namespace TicTacToe
                     placements[i] = (" O ");
 
                 }
-                else if (positions[i] == 0) placements[i] = (" _ ");
+                else if (positions[i] == 0) 
+                {
 
+                placements[i] = (" _ ");
+
+                blankSpace = true;
+
+                }
                 Console.Write(placements[i]);
 
                 if(i != 2 || i !=5) Console.Write("|");
@@ -154,8 +161,22 @@ namespace TicTacToe
 
             userOneTurn = !userOneTurn;
 
+            if(!blankSpace)
+            {
+
+                gameEnd = true;
+
+            }else blankSpace = false;
+
         }
 
+
+        public void CheckForWins()
+    {
+
+        
+
+    }
 
     }
 
